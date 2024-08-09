@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Race Saiyan - JDR</title>
+  
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Justification du texte pour les sections Bonus et Traits Raciaux */
+    .service-item-text {
+      text-align: justify;
+    }
+    /* Style pour les icônes */
+    .service-icon-box i {
+      font-size: 24px;
+      color: #4a4a4a;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/saiyan.jpg" alt="Avatar Saiyan" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Saiyan">Race Saiyan</h1>
+          <p class="title">Guerriers puissants</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Voir plus</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        
+
+        
+      </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="saiyan.html" class="navbar-link active">Saiyan</a></li>
+          <li class="navbar-item"><a href="namek.html" class="navbar-link">Namek</a></li>
+          <li class="navbar-item"><a href="arcosien.html" class="navbar-link">Arcosien</a></li>
+          <li class="navbar-item"><a href="terriens.html" class="navbar-link">Terrien</a></li>
+          <li class="navbar-item"><a href="majin.html" class="navbar-link">Majin</a></li>
+          <li class="navbar-item"><a href="shinjins.html" class="navbar-link">Shinjin</a></li>
+          <li class="navbar-item"><a href="cerealien.html" class="navbar-link">Cerealien</a></li>
+        </ul>
+      </nav>
+
+      <!-- ARTICLE -->
+      <article class="présentation active" data-page="présentation">
+        <header>
+          <h2 class="h2 article-title">Saiyan</h2>
+        </header>
+
+        <!-- Description de la Race -->
+        <section class="about-text">
+          <p>Les Saiyans sont une race de guerriers puissants, connus pour leur force incroyable et leur capacité à devenir plus forts après chaque combat. Leur esprit combatif et leur fierté sont légendaires.</p>
+        </section>
+
+        <!-- Bonus raciaux -->
+        <section class="service">
+          <h3 class="h3 service-title">Bonus raciaux</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-dice"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Saiyan Elite</h4>
+                <p class="service-item-text">
+                  Vous avez un bonus de 20 sur le dé de création de personnage.<br>
+                  Vous avez la capacité "Moon Ball".<br>
+                  Augmentez vos dés de maîtrise pour le Gorille Géant de 20.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-fist-raised"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Saiyan Pride</h4>
+                <p class="service-item-text">
+                  Multiplie votre Force et Endurance de 1,3 lorsque vos PV passent au-dessous de 60%.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-dragon"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Force Primale</h4>
+                <p class="service-item-text">
+                  Avec queue : Pour les formes réservées à la race Saiyan, les dés de maîtrises ont un bonus de 10.<br>
+                  Sans queue : Vous pouvez entrer en état critique à 35% de PV. De plus, l'état critique augmente forcément le multiplicateur de la forme utilisée de 10% (ex. : SSJ passe de 50x à 55x).
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-fire"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Born for Rampage</h4>
+                <p class="service-item-text">
+                  Niveau 1 : Vous avez la capacité de réaliser une attaque d’énergie destructrice qui touche tout autour de vous. Vous pouvez choisir de devenir un Saiyan Légendaire, qui obtiendra des formes différentes. Sinon, vous pouvez entrer en État Critique à n’importe quel moment, mais vous attaquez automatiquement la cible la plus proche de vous jusqu’à l'inconscience.<br>
+                  Niveau 4 : Votre régénération de Ki de base est doublée. Le drain de l'État Critique est réduit de 1%.<br>
+                  Niveau 8 : Vos coups dévastateurs ne visent plus vos alliés. L'effet de fureur ne prend plus en compte vos alliés.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Traits raciaux -->
+        <section class="service">
+          <h3 class="h3 service-title">Traits raciaux</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-dumbbell"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Née pour le combat</h4>
+                <p class="service-item-text">
+                  Tous les entraînements ont un bonus de 10.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Adaptation</h4>
+                <p class="service-item-text">
+                  Plus vous vous battez contre un ennemi, plus vous vous habituez à son style de combat. Gagnez un bonus de 5 tous les deux tours (max : bonus de 10). Ce bonus est individuel par ennemi.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Near Death Experience</h4>
+                <p class="service-item-text">
+                  Les Zenkais des Saiyans augmentent le modificateur d'énergie de 0,2 au lieu de 0,1.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Combativité Extrême</h4>
+                <p class="service-item-text">
+                  Une fois par combat, peut rester à 1 PV après une attaque qui est censé tuer/assomer.
+                </p>
+              </div> 
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
