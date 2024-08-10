@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonus Communs</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <!-- Font and Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+
+    .dropdown-menu {
+      margin-bottom: 20px;
+    }
+
+    .service-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .service-content-box {
+      display: none;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .service-content-box p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- MAIN CONTENT -->
+  <main>
+      <div class="main-content">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link">Saiyan</a></li>
+          <li class="navbar-item"><a href="namek.html" class="navbar-link">Namek</a></li>
+          <li class="navbar-item"><a href="arcosien.html" class="navbar-link active">Arcosien</a></li>
+          <li class="navbar-item"><a href="terriens.html" class="navbar-link">Terrien</a></li>
+          <li class="navbar-item"><a href="majin.html" class="navbar-link">Majin</a></li>
+          <li class="navbar-item"><a href="shinjins.html" class="navbar-link">Shinjin</a></li>
+          <li class="navbar-item"><a href="cerealien.html" class="navbar-link">Cerealien</a></li>
+          <li class="navbar-item"><a href="bonus-communs.html" class="navbar-link active">Bonus Communs</a></li>
+        </ul>
+      </nav>
+      <article class="présentation active" data-page="présentation">
+        <header>
+          <h2 class="h2 article-title">Bonus Communs</h2>
+        </header>
+
+        <!-- Liste des Bonus Communs -->
+        <div class="dropdown-menu">
+          <select id="service-select">
+            <option value="" selected disabled>-- Sélectionnez un bonus --</option>
+            <option value="fighting-instincts">Fighting Instincts</option>
+            <option value="fighting-toughness">Fighting Toughness</option>
+            <option value="improvisation">Improvisation</option>
+            <option value="miracle-dice">Miracle Dice</option>
+            <option value="intimidating-aura">Intimidating Aura</option>
+            <option value="mentored">Mentored</option>
+            <option value="energy-sense">Energy Sense</option>
+            <option value="energy-suppression">Energy Suppression</option>
+            <option value="inner-eye">Inner Eye</option>
+            <option value="prodige">Prodige</option>
+            <option value="specialisation">Spécialisation</option>
+            <option value="force-interieure">Force Intérieure</option>
+            <option value="jack">Jack</option>
+            <option value="ki-condense">Ki Condensé</option>
+            <option value="charge-de-ki">Charge de Ki</option>
+            <option value="berserk">Berserk</option>
+          </select>
+        </div>
+
+        <!-- Détails des Bonus -->
+        <div id="fighting-instincts" class="service-content-box">
+          <div class="service-title">Fighting Instincts</div>
+          <p><strong>Niveau 1 :</strong> Faire un dé 50/50, si le dé est réussi, peut esquiver une attaque non visible. Vous avez un bonus de 5 pour esquiver l’attaque. CD de 2 tours.</p>
+          <p><strong>Niveau 2 :</strong> Le dé a une chance de 75% de réussir, et le bonus est de 10. Le CD est le même.</p>
+          <p><strong>Niveau 3 :</strong> Le CD dure maintenant 1 tour.</p>
+        </div>
+
+        <div id="fighting-toughness" class="service-content-box">
+          <div class="service-title">Fighting Toughness</div>
+          <p><strong>Niveau 1 :</strong> Peut donner un malus de 15 sur le dé d'esquive pour réduire les dégâts de 1 seuil. CD de 2 tours.</p>
+          <p><strong>Niveau 2 :</strong> L’augmentation du dé est maintenant de 10; et le CD est maintenant de 1 tour.</p>
+          <p><strong>Niveau 3 :</strong> La réduction de dégâts est maintenant de 2 seuils.</p>
+        </div>
+
+        <div id="improvisation" class="service-content-box">
+          <div class="service-title">Improvisation</div>
+          <p><strong>Niveau 1 :</strong> Vous êtes capable de créer une petite technique par combat.</p>
+          <p><strong>Niveau 2 :</strong> Une moyenne technique ou deux petites par combat.</p>
+          <p><strong>Niveau 3 :</strong> Vous avez la capacité de mélanger vos techniques à des effets surprenants !</p>
+        </div>
+
+        <div id="miracle-dice" class="service-content-box">
+          <div class="service-title">Miracle Dice</div>
+          <p><strong>Niveau 1 :</strong> Augmente la chance de réussite de 1.</p>
+          <p><strong>Niveau 2 :</strong> Augmente la chance de réussite de 5 à la place de 1.</p>
+        </div>
+
+        <div id="intimidating-aura" class="service-content-box">
+          <div class="service-title">Intimidating Aura</div>
+          <p><strong>Niveau 1 :</strong> Vous pouvez faire apparaître votre énergie, même aux appareils électroniques, comme étant 150% de votre puissance maximale. Si la personne est intimidée (Dé d’opposition avec un bonus plus ou moins grand selon l’écart), elle a un malus de 5 pendant son premier tour et l’initiative.</p>
+          <p><strong>Niveau 2 :</strong> 300%. Le malus devient 10.</p>
+          <p><strong>Niveau 3 :</strong> 500%. Le malus devient 15.</p>
+        </div>
+
+        <div id="mentored" class="service-content-box">
+          <div class="service-title">Mentored</div>
+          <p><strong>Niveau 1 :</strong> Obtenez une petite technique. Vous apprenez plus simplement aux autres.</p>
+          <p><strong>Niveau 2 :</strong> Obtenez une technique moyenne. Vous apprenez encore plus simplement les techniques aux autres.</p>
+          <p><strong>Niveau 3 :</strong> Obtenez une technique unique. Vous pouvez donner l'équivalent d'un bonus de maître sur un entraînement pour une personne.</p>
+        </div>
+
+        <div id="energy-sense" class="service-content-box">
+          <div class="service-title">Energy Sense</div>
+          <p><strong>Niveau 0 :</strong> Peut sentir ennemi avec dé, sait si l’ennemi est plus fort ou non.</p>
+          <p><strong>Niveau 1 :</strong> Peut obtenir une approximation du Power Level de l’ennemi avec un bon dé.</p>
+          <p><strong>Niveau 2 :</strong> Plus besoin de dé pour une approximation.</p>
+          <p><strong>Niveau 3 :</strong> Sait le chiffre exact ET sait si l’ennemi se retient et s’il utilise une forme.</p>
+        </div>
+
+        <div id="energy-suppression" class="service-content-box">
+          <div class="service-title">Energy Suppression</div>
+          <p><strong>Niveau 1 :</strong> Peut se retenir jusqu'à un minimum d'un dixième de votre puissance totale.</p>
+          <p><strong>Niveau 2 :</strong> Peut se retenir jusqu'à un minimum d'un centième de votre puissance totale.</p>
+          <p><strong>Niveau 3 :</strong> Peut se retenir jusqu'à un minimum de 1.</p>
+        </div>
+
+        <div id="inner-eye" class="service-content-box">
+          <div class="service-title">Inner Eye</div>
+          <p><strong>Niveau 1 :</strong> En État Critique, peut faire une vision en combat. Donne le Niveau 1 de Energy Sense. Donne un malus sur les dés de charisme.</p>
+          <p><strong>Niveau 2 :</strong> Peut faire une vision en combat et une fois par session hors combat.</p>
+          <p><strong>Niveau 3 :</strong> Vision faisable plusieurs fois en combats avec un CD de 2 tours, et faisable trois fois par session hors combat.</p>
+        </div>
+
+        <div id="prodige" class="service-content-box">
+          <div class="service-title">Prodige</div>
+          <p><strong>Niveau 1 :</strong> Vous avez un bonus de 10 pour les dés d’entraînements solitaire ou avec un maître. N’importe quel entraînement avec des partenaires ne possèdent pas ce bonus, ET au lieu d’avoir -5 pour chaque partenaire, vous avez -5 pour tout les deux partenaires.</p>
+        </div>
+
+        <div id="specialisation" class="service-content-box">
+          <div class="service-title">Spécialisation</div>
+          <p><strong>Niveau 1 :</strong> Tu as un bonus de 5 dans ta spécialisation.</p>
+          <p><strong>Niveau 2 :</strong> Tu choisis une attaque (Par exemple, Coup de Boule ou Dropkick pour Mêlée) et cela te donne un bonus de 5 dedans. Ce bonus a un CD d’un tour.</p>
+          <p><strong>Niveau 3 :</strong> Tu as un bonus de 10 dans ta spécialisation désormais, mais tu as désormais un malus de 5 pour le reste des compétences.</p>
+        </div>
+
+        <div id="force-interieure" class="service-content-box">
+          <div class="service-title">Force Intérieure</div>
+          <p><strong>Niveau 1 :</strong> Vous obtenez 10% de toutes vos réserves par un grand stress mental ou émotionnel. CD de 5 tours.</p>
+          <p><strong>Niveau 2 :</strong> 25%, CD de 4 tours.</p>
+          <p><strong>Niveau 3 :</strong> 40%, CD de 3 tours.</p>
+        </div>
+
+        <div id="jack" class="service-content-box">
+          <div class="service-title">Jack</div>
+          <p><strong>Niveau 1 :</strong> Vous pouvez mélanger une technique d’un domaine et d’un autre, avec un malus de 5 au dé.</p>
+          <p><strong>Niveau 2 :</strong> Le malus est réduit à 0.</p>
+          <p><strong>Niveau 3 :</strong> Le malus est désormais un bonus de 5.</p>
+        </div>
+
+        <div id="ki-condense" class="service-content-box">
+          <div class="service-title">Ki Condensé</div>
+          <p><strong>Niveau 1 :</strong> Vous êtes capable de condenser votre Ki. Augmente la chance de coup critique de 10% pour 5% de Ki en plus.</p>
+          <p><strong>Niveau 2 :</strong> Pour 5% de Ki, la chance augmente de 20%.</p>
+          <p><strong>Niveau 3 :</strong> Pour 5% de Ki, la chance augmente de 40%.</p>
+        </div>
+
+        <div id="charge-de-ki" class="service-content-box">
+          <div class="service-title">Charge de Ki</div>
+          <p><strong>Niveau 1 :</strong> Vous avez un bonus de 5 pour tous les coups physiques, mais cela coûte 2% de votre Ki.</p>
+          <p><strong>Niveau 2 :</strong> Le bonus devient 10.</p>
+          <p><strong>Niveau 3 :</strong> Le bonus devient 15.</p>
+        </div>
+
+        <div id="berserk" class="service-content-box">
+          <div class="service-title">Berserk</div>
+          <p><strong>Niveau 1 :</strong> Si vous êtes en dessous de 25% de votre HP total, vous obtenez un bonus de 5 de dégâts de Ki et physique. CD de 2 tours.</p>
+          <p><strong>Niveau 2 :</strong> Le bonus devient 10.</p>
+          <p><strong>Niveau 3 :</strong> Le bonus devient 15.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('service-select').addEventListener('change', function () {
+      var value = this.value;
+      var services = document.querySelectorAll('.service-content-box');
+      
+      services.forEach(function (service) {
+        service.style.display = 'none';
+      });
+
+      if (value) {
+        document.getElementById(value).style.display = 'block';
+      }
+    });
+  </script>
+</body>
+
+</html>

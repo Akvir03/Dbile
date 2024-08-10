@@ -509,7 +509,7 @@ main {
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
-  padding: 0 8px; /* Réduit le padding horizontal */
+  padding: 0 6px; /* Réduit le padding horizontal de 25% */
 }
 
 .navbar-list {
@@ -522,8 +522,8 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: calc(var(--fs-8) * 0.85); /* Réduit la taille de la police de 15% */
-  padding: 17px 6px; /* Réduit le padding pour ajuster la taille */
+  font-size: calc(var(--fs-8) * 0.675); /* Réduit la taille de la police de 25% */
+  padding: 13px 4px; /* Réduit le padding de 25% pour ajuster la taille */
   transition: color var(--transition-1);
 }
 
@@ -535,6 +535,7 @@ main {
 .navbar-link.active {
   color: var(--orange-yellow-crayola);
 }
+
 
 
 
