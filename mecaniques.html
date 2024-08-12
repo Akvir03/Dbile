@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mécaniques</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <!-- Font and Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+
+    .dropdown-menu {
+      margin-bottom: 20px;
+    }
+
+    .service-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .service-content-box {
+      display: none;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .service-content-box p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- MAIN CONTENT -->
+  <main>
+      <div class="main-content">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link">Saiyan</a></li>
+          <li class="navbar-item"><a href="namek.html" class="navbar-link">Namek</a></li>
+          <li class="navbar-item"><a href="arcosien.html" class="navbar-link">Arcosien</a></li>
+          <li class="navbar-item"><a href="terriens.html" class="navbar-link">Terrien</a></li>
+          <li class="navbar-item"><a href="majin.html" class="navbar-link">Majin</a></li>
+          <li class="navbar-item"><a href="shinjins.html" class="navbar-link">Shinjin</a></li>
+          <li class="navbar-item"><a href="cerealien.html" class="navbar-link">Cerealien</a></li>
+          <li class="navbar-item"><a href="mecaniques.html" class="navbar-link active">Mécaniques</a></li>
+          <li class="navbar-item"><a href="bonus-communs.html" class="navbar-link">Bonus Communs</a></li>
+        </ul>
+      </nav>
+      <article class="présentation active" data-page="présentation">
+        <header>
+          <h2 class="h2 article-title">Mécaniques</h2>
+        </header>
+
+        <!-- Liste des Mécaniques -->
+        <div class="dropdown-menu">
+          <select id="service-select">
+            <option value="" selected disabled>-- Sélectionnez une mécanique --</option>
+            <option value="system-transfo">Système de transformation et de technique</option>
+            <option value="drain-ki">Drain de Ki</option>
+            <option value="etat-critique">État Critique</option>
+            <option value="system-training">Système d’entraînement</option>
+            <option value="system-combat">Système de combat</option>
+            <option value="character-creation">Création de Personnage</option>
+            <option value="stack-bonus">Stack de Bonus</option>
+          </select>
+        </div>
+
+
+        <!-- Détails des Mécaniques -->
+        <div id="system-transfo" class="service-content-box">
+          <div class="service-title">Système de transformation et de technique</div>
+          
+          <h3>Nouveau système de maîtrise pour les transformations</h3>
+          
+          <h4>À quoi ça sert</h4>
+          
+          <p>
+            Les transformations ont maintenant ce que je vais appeler soit des "<strong>Grades</strong>", soit des "<strong>Niveaux de Maîtrise</strong>". 
+            Une transformation à, normalement, 4 Grades, chacun ayant un nom unique dépendant à la forme. 
+            Vous débloquez instantanément le Grade 1 quand vous obtenez une forme, le Grade 1 représente tout simplement l'état de base de la forme quand vous l'obtenez.
+          </p>
+          <br>
+          
+          <p>
+            Les Grades peuvent avoir des effets complètement différent d'une forme à l'autre, puisque chaque forme est différente. 
+            Ce système est fait pour interagir avec le nouveau système de Ki Drain, que je vais introduire au-dessous de cette partie. 
+            Voici un exemple de ce système, en prenant par exemple la forme la plus classique, le Super Saiyan :
+          </p>
+          
+          <p>
+            - <strong>Grade 1</strong> : Vous venez d'obtenir le Super Saiyan, avec ces défauts comme ces avantages.<br>
+            - Avantage : Vous obtenez la forme Super Saiyan, qui a un multiplicateur de 50 sur votre puissance.<br><br>
+            - Défauts : Un Drain de Ki d'environ 2% par tour, ainsi qu'une instabilité mentale à cause d'une colère intense ainsi que d'énergie (Cela veut dire que l'Energy Suppression ne peut plus être activé pendant la forme !).<br>
+            - <strong>Grade 2</strong> : Vous avez réussi à pousser le Super Saiyan un peu loin, forçant constamment votre énergie dorée dans votre corps, vous faisant devenir visiblement plus musclé.<br>
+            - Avantage : Création d'une nouvelle variante de Super Saiyan, avec un multiplicateur de 60x (Nom au choix).<br>
+            - Défaut : Un doublage du Drain de Ki dans cette nouvelle variante par rapport au Super Saiyan de base.<br><br>
+            - <strong>Grade 3</strong> : Vous avez continué sur cette route, essayant de pousser à bout la puissance de la forme !<br>
+            - Avantage : Création d'une nouvelle variante de Super Saiyan, avec un multiplicateur de x100 (Nom au choix).<br>
+            - Défaut : Le Drain de Ki de cette nouvelle forme est de 8%, et l'agilité n'est pas augmenté autant que la force, même, elle est encombrée.<br><br>
+            - <strong>Grade 4</strong> : Vous avez réussi à non seulement combiné l'aspect de puissance sans fin du Super Saiyan tout en contrôlant son énergie et ses effets émotionnels, rendant le Super Saiyan plus efficace que jamais !<br>
+            - Nouveautés : Le Super Saiyan a maintenant un multiplicateur *maximum* de 70. Vous pouvez gérer le multiplicateur de la forme, avec un minimum de 50. Quand vous êtes à un multiplicateur de 60, le Drain de Ki est inexistant, mais vous pouvez augmenter le multiplicateur ce qui rajoutera un drain de ki équivalent à 1% tout les 2 points rajoutés sur le multiplicateur (Donc un multiplicateur de 70 donne un Drain de Ki de 5%). Avoir un multiplicateur de 50 par contre donnera un Regain de Ki seulement de 1%.
+          </p>
+          
+          <br>
+          
+          <p>
+            Il est important de mentionner que, bien que la plupart des formes vont avoir 4 Grades, il y a des exceptions. 
+            Certaines formes ont un Grade 0 (Comme le Super Saiyan, qui a un Grade 0 appelé Pseudo Super Saiyan). 
+            Et, aussi, toute les formes ont ce que j'appelle un "Grade Expert", qui concrètement représente une spécialisation avancée dans cette forme.
+          </p>
+          <br>
+          
+          <h4>Comment on augmente de Grade/Niveau de Maîtrise</h4>
+          
+          <p>
+            C'est simple. Imaginons, on prend un mois. Vous vous entraînez seulement sur la maîtrise de votre forme pendant ce mois-ci, 
+            alors vous me faites un D100 divisé par 4. Vous rajoutez ce résultat à ce que j'appelle le "Pourcentage de Maîtrise". 
+            Celui-ci commence à 0. Quand vous arrivez à 100% du "Pourcentage de Maîtrise", vous passez au grade suivant. 
+            Il n'est pas possible de descendre en temps normal, même avec une échec critique.
+          </p>
+          
+          <br>
+          
+          <h3>Nouveau système de technique</h3>
+          
+          <p>
+            Les techniques ne changent pas, elles restent comme elles le sont actuellement, aka: 
+            Faire un dé pour améliorer la technique... À l'exception d'une, le <strong>Kaio-Ken</strong>.
+          </p>
+
+          <br>
+          
+          <p>
+            Le Kaio-Ken possède un système de grade, mais n'est pas pareil que les autres. Le Kaio-Ken n'est pas limité par 4 Grades, mais plutôt par à quel point l'utilisateur le pousse. Voici un exemple :
+          </p>
+          <p>
+            - Grade 1 : Kaio-Ken x1,5.<br>
+            - Grade 2 : Kaioken x2 max.<br>
+            - Grade 3 : Kaioken x3 tenable avec un 4x possible en cas d'urgence.<br>
+            - Grade 4 : Kaioken x10, avec un x20 possible en cas d'urgence.<br>
+            Et ainsi de suite.
+          </p>
+          
+          <br>
+          <p>
+            Contrairement à ses collègues les transformations, l'efficacité du D100 de maîtrise du Kaio-Ken dépend du Grade à améliorer.
+          </p>
+        </div>
+        
+
+        <div id="drain-ki" class="service-content-box">
+          <div class="service-title">Drain de Ki</div>
+          <p>
+            C'est plutôt simple, si vous avez un Drain de Ki de 5%, vous perdez 5% de votre puissance par tour. A l'inverse, le Regain de Ki vous fait regagner votre puissance perdu. En forme de base (sans technique et avec personne qui ne vous donne de l'énergie), vous avez un Regain de Ki de base de 1%. Celui-ci est annulé quand vous avez un Drain de Ki.
+          </p>
+          
+          <br>
+
+          <p>
+            Exemples :<br>
+            - Je rentre dans Super Saiyan Grade 1, je n'ai plus de Regain de Ki, mais j'ai un Drain de Ki de 2%.<br>
+            - Je rentre dans Super Saiyan Grade 4 avec un multiplicateur de 50, j'ai un Regain de Ki de 2%.<br>
+            - Je donne de l'énergie à un allié, disons 2%, je perds 2% de ma puissance et il gagne 2% de puissance.
+          </p>
+        </div>
+
+
+        <div id="etat-critique" class="service-content-box">
+          <div class="service-title">État Critique</div>
+          <p>
+            Quand vous tombez à en-dessous de 20% d'HP, vous pouvez rentrer dans ce que j'appelle l'État Critique, qui fait notamment 2 choses, obligatoirement :
+          </p>
+
+          <br>
+
+          <p>
+            - Il vous donne un Drain de Ki de 3%.<br>
+            - Il est capable d'améliorer soit : Votre puissance de base, la forme que vous utilisez, ou autre.
+          </p>
+          
+          <br>
+
+          <p>
+            L'État Critique peut donner d'autres bonus (ou malus) dépendant de la situation.
+          </p>
+        </div>
+
+
+        <div id="system-training" class="service-content-box">
+          <div class="service-title">Système d’entraînement</div>
+          <h3>
+            Gain de points de statistiques
+          </h3>
+          <p>
+            100-96 : 1 point de pitié<br>
+            95-81 : ½ * Niveau/2<br>
+            80-61 : 1 * Niveau/2<br>
+            60-41 : 2 * Niveau/2<br>
+            40-21 : 4 * Niveau/2<br>
+            20-6 : 8 * Niveau/2<br>
+            5-2 : 12 * Niveau/2<br>
+            1 : 16 * Niveau/2
+          </p>
+          
+          <br>
+
+          <h3>
+            Les Partenaires
+          </h3>
+          
+          <p>
+            Chaque partenaire donne un bonus de 5 sur le dé d’entraînement. Cela n’affecte pas les échecs et/ou réussites critiques.<br>
+            Si un partenaire est BEAUCOUP plus fort (Environ une différence d’au moins 50% dans le Power Level) de base, alors vous possédez un bonus de 25 à la place de 5.
+          </p>
+          
+          <br>
+          <h3> 
+            Les Maîtres
+          </h3>
+          
+          <p>
+            Un maître vous donne un bonus de 10 jusqu’à ce qu'il ne puisse plus vous apprendre.
+          </p>
+        </div>
+
+
+        <div id="system-combat" class="service-content-box">
+          <div class="service-title">Système de combat</div>
+          <h3>
+            Seuils de dégâts
+          </h3>
+          
+          <p>
+            Si même puissance avec un écart de moins de 25%, dégâts = 50.<br>
+            Si même puissance avec un écart de 26 à 50% de dégâts = 75.<br>
+            Si même puissance avec un écart de 51 à 75% de dégâts = 100.<br>
+            Si même puissance avec un écart de 76 à 100% de dégâts = 125.<br>
+            Etc, etc.
+          </p>
+
+          <br>
+          
+          <h3>
+            Les Techniques Dégâts
+          </h3>
+
+          <p>
+            Les petites techniques augmentent les dégâts de 25. Elles coûtent 2% de Ki.<br>
+            Les moyennes techniques augmentent les dégâts de 50. 5%<br>
+            Les techniques ultimes augmentent au MINIMUM les dégâts de 100. Elles coûtent de 10 à 25%. Les dégâts suivent un ratio de 1% pour 10 dégâts (Donc 25% ajouteraient 250 de dégâts).
+          </p>
+
+          <br>
+
+          <h3>
+            Les Techniques Non-Dégâts
+          </h3>
+
+          <p>
+            Exemple : Aura Rapide.<br>
+            Elle coûte 3% pour un bonus de 10. Vous pouvez utiliser 6% pour ajouter une action dans votre tour.<br>
+            Les malus (Exemple : Télékinésie) fonctionnent de la même façon, excepté pour une chose. Si l’ennemi n’a qu’une seule action, il ne la perd pas, mais il possède désormais un malus de 20 à la place de 10.<br>
+            Ces techniques sont utilisables sans action une fois par tour par Niveau de Technique.
+          </p>
+
+          <br>
+
+          <h3>
+            Les Techniques Uniques
+          </h3>
+
+          <p>
+            Les techniques uniques sont des techniques qui progressent en même temps que le joueur, se faisant, elles gagnent en puissance. Cela se manifeste via des améliorations à choisir tous les 2 niveaux.<br>
+            Elles commencent avec un aspect d’utilisation similaire à une technique de base (dégâts, non dégâts, transformation).<br>
+            Vous n’avez le droit qu’à une Technique Unique par Personnage. La seule exception est quand vous en apprenez une de la part de quelqu’un (généralement un maître). Dans ce cas-là, si vous n’avez pas encore amélioré de technique unique ou créez une technique unique, vous pouvez choisir de l’améliorer.
+          </p>
+
+          <br>
+
+          <h4>
+            Spécialisation Commune
+          </h4>
+
+          <p>
+            - Multi usage : Votre technique gagne un nouvel aspect d’utilisation (exemple le contrôle de la gravité pour nerf les ennemis et se buff).<br>
+            - Économe : Réduit la consommation de ki de 2% a un minimum de 50% du coût de base.<br>
+            - Multicible : Vous pouvez cibler plusieurs personnes, augmenter le nombre de cible maximum de 1 à chaque fois que ce bonus est choisi.
+          </p>
+
+          <br>
+
+          <h4>
+            Spécialisation Dégâts
+          </h4>
+
+          <p>
+            - Techniques puissantes : Augmente les dégâts de 1 seuil.<br>
+            - Chargement optimale : Pour chaque tour de charge augmenter le seuil de dégâts de 1 jusqu’à un maximum de 2.<br>
+            - Puissance vengeresse : Vous pouvez utiliser vos pv au lieu de votre ki pour payer cette technique, gagner un bonus de 10 sur votre dés d’attaque lorsque ce bonus est utilisé.
+          </p>
+
+          <br>
+
+          <h4>
+            Spécialisation Transformation (Exemple : Kaio-Ken)
+          </h4>
+
+          <p>
+            - Au-delà des limites : Vous pouvez pousser votre transformation à un stade supérieur multipliez le multiplicateur par 2. Pour chaque tour où cet effet est utilisé, subissez 10% de pv max en dégâts.<br>
+            - Déferlement de puissance : Vous pouvez passer dans cette technique de transformation pour une action. Cela coûte un pourcentage de ki dépendant de la technique.
+          </p>
+
+          <br>
+
+          <h4>
+            Spécialisation Nerf/Buff (Exemple : La gravité)
+          </h4>
+
+          <p>
+            - Amélioration de la technique : Augmente le malus/bonus de 5. Ce malus augmente à chaque fois que vous prenez cette spécialisation. Vous ne pouvez prendre cette augmentation que deux fois.<br>
+            - Durée améliorée : La technique dure 1 tour de plus. Cette spécialisation ne se cumule pas.
+          </p>
+        </div>
+
+
+        <div id="character-creation" class="service-content-box">
+          <div class="service-title">Création de Personnage</div>
+          
+          <p>
+            Quand vous créez votre personnage, vous faites un dé d'entraînement classique, avec, sauf exceptions, aucun bonus ni malus. Cela déterminera combien de points vous mettez sur votre personnage. Vous comptez votre niveau comme étant le niveau 4 pour ce dé d'entraînement. (Donc un 1 vous donne 32 points).
+          </p>
+
+          <br>
+
+          <p>
+            Vous pouvez choisir 3 bonus.
+          </p>
+        </div>
+
+
+        <div id="stack-bonus" class="service-content-box">
+          <div class="service-title">Stack de Bonus</div>
+          <p>
+            Un même bonus ne peut pas stacker, sauf exceptions écrites. Exemple : S'il y a deux Arcosiens dans la même équipe avec "Chef d'équipe", seul un des Arcosiens donnera le bonus de dé.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('service-select').addEventListener('change', function () {
+      var value = this.value;
+      var services = document.querySelectorAll('.service-content-box');
+      
+      services.forEach(function (service) {
+        service.style.display = 'none';
+      });
+
+      if (value) {
+        document.getElementById(value).style.display = 'block';
+      }
+    });
+  </script>
+</body>
+
+</html>
